@@ -54,7 +54,7 @@ public class Main{
 			showPath();
 			
 			//プレイヤーがダイスを振る
-			System.out.println("ダイス振ってね（エンターキー）");
+			System.out.println("ダイス振ってねー（エンターキー）");
 			input.nextLine(); //入力街ち（データは読み取らない）
 			int proceed=rand.nextInt(4)+1; //1~4のどれか適当に
 			System.out.println(proceed+"が出たよ");
@@ -78,7 +78,7 @@ public class Main{
 			//もしゴールだったら ゲーム終了
 			boolean goal = path.length - 1 <= player.getPosition();
 			if(goal) {
-				System.out.println("ゴールやで"+"あなたの獲得ポイントは"+Coma.point+"点です");
+				System.out.println("ゴールです"+"あなたの獲得ポイントは"+Coma.point+"点です");
 				break;
 			}
 		
